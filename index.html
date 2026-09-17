@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lilia Marouf — Je pense, je construis, je fais vivre votre présence digitale</title>
+<meta name="description" content="Lilia Marouf, consultante en marketing digital depuis plus de 10 ans. Stratégie, création de site et social media pensés comme une seule expertise, pour indépendants, TPE et PME.">
+<link rel="canonical" href="https://www.liliamarouf.fr/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lilia Marouf — Stratégie, site et social media, une seule expertise">
+<meta property="og:description" content="10+ ans d'expérience en marketing digital. Consulting, création de site et social media pour indépendants, TPE et PME.">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#141210">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Lilia Marouf — Consulting marketing digital",
+  "founder": {"@type":"Person","name":"Lilia Marouf","jobTitle":"Consultante en marketing digital"},
+  "description": "Consulting en marketing digital, création de sites internet et stratégie social media pour indépendants, TPE et PME.",
+  "areaServed": "FR",
+  "knowsAbout": ["Marketing digital", "Création de site internet", "Stratégie social media"]
+}
+</script>
+<style>
+  :root{
+    --ink:#141210;
+    --ink-2:#1D1A15;
+    --paper:#F4EEDD;
+    --paper-2:#E9DFC3;
+    --text-l:#18140F;
+    --text-l-soft:#5C5241;
+    --line-l:#D8CBA3;
+    --text-d:#F4EEDD;
+    --text-d-soft:#B4AA95;
+    --line-d:#34302A;
+    --accent:#D1372A;
+    --accent-deep:#8A2019;
+    --on-accent:#F8EFDD;
+    --bg:var(--ink); --fg:var(--text-d); --muted:var(--text-d-soft); --line:var(--line-d);
+    --radius:2px;
+    --font-serif:'Instrument Serif', serif;
+    --font-sans:'Space Grotesk', sans-serif;
+  }
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ink:#0F0D0B;--paper:#F1EBD8}}
+  :root[data-theme="dark"]{--ink:#0F0D0B;--paper:#F1EBD8}
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--ink);color:var(--text-d);font-family:var(--font-sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+  @media (min-width:640px){.wrap{padding:0 48px}}
+  .skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--on-accent);padding:10px 16px;z-index:200}
+  .skip:focus{left:16px;top:16px}
+
+  .band{background:var(--bg);color:var(--fg)}
+  .band-light{--bg:var(--paper);--fg:var(--text-l);--muted:var(--text-l-soft);--line:var(--line-l)}
+  .band-tint{--bg:var(--paper-2);--fg:var(--text-l);--muted:var(--text-l-soft);--line:var(--line-l)}
+  .band-accent{--bg:var(--accent);--fg:var(--on-accent);--muted:#F2D9CE;--line:#E38E82}
+
+  h1,h2,h3{font-family:var(--font-serif);font-style:italic;font-weight:400;line-height:1.02;margin:0;letter-spacing:-0.01em}
+  .h-roman{font-style:normal}
+  p{margin:0 0 1rem;max-width:38em}
+  .lede{font-size:1.05rem;color:var(--muted)}
+  .label{font-family:var(--font-sans);font-size:0.82rem;color:var(--muted);letter-spacing:0.02em;font-weight:500}
+  .num{font-family:var(--font-sans);font-variant-numeric:tabular-nums;font-weight:700}
+  .cite{font-family:var(--font-serif);font-style:italic;font-weight:400}
+
+  header.site{position:sticky;top:0;z-index:100;background:var(--ink);border-bottom:1px solid var(--line-d)}
+  .nav-row{display:flex;align-items:center;justify-content:space-between;padding:18px 0;color:var(--text-d)}
+  .wordmark{font-family:var(--font-serif);font-style:italic;font-size:1.4rem;text-decoration:none;color:var(--text-d)}
+  nav.primary{display:none;gap:30px;align-items:center}
+  nav.primary a{text-decoration:none;font-size:0.92rem;color:var(--text-d-soft);position:relative;padding-bottom:6px}
+  nav.primary a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+  nav.primary a:hover,nav.primary a:focus-visible{color:var(--text-d)}
+  nav.primary a:hover::after,nav.primary a:focus-visible::after{transform:scaleX(1)}
+  nav.primary a[aria-current="page"]{color:var(--text-d)}
+  nav.primary a[aria-current="page"]::after{transform:scaleX(1)}
+  .cta{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--on-accent);padding:13px 24px;text-decoration:none;font-family:var(--font-sans);font-size:0.92rem;font-weight:500;border:1px solid var(--accent);border-radius:var(--radius);transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+  .cta:hover,.cta:focus-visible{transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(209,55,42,0.55);background:var(--accent-deep);border-color:var(--accent-deep)}
+  .cta.ghost{background:transparent;color:inherit;border:1px solid currentColor}
+  .cta.ghost:hover,.cta.ghost:focus-visible{background:currentColor;color:var(--bg);box-shadow:none}
+  .menu-toggle{display:inline-flex;background:none;border:1px solid var(--line-d);color:var(--text-d);border-radius:var(--radius);padding:9px 12px;font-family:var(--font-sans);font-size:0.9rem;cursor:pointer}
+  @media (min-width:900px){nav.primary{display:flex}.menu-toggle{display:none}}
+  #mobile-menu{display:none;flex-direction:column;padding:6px 0 18px;border-top:1px solid var(--line-d)}
+  #mobile-menu.open{display:flex}
+  #mobile-menu a{padding:14px 0;text-decoration:none;color:var(--text-d);border-bottom:1px solid var(--line-d);font-size:1.05rem}
+  @media (min-width:900px){#mobile-menu{display:none!important}}
+
+  section{padding:80px 0}
+  @media (min-width:900px){section{padding:130px 0}}
+
+  /* HERO */
+  .hero{position:relative;overflow:hidden;padding-top:60px}
+  @media (min-width:900px){.hero{padding-top:100px}}
+  .hero-ghost{position:absolute;right:-2vw;top:6%;font-family:var(--font-sans);font-weight:700;font-size:clamp(9rem,32vw,24rem);line-height:1;color:transparent;-webkit-text-stroke:1px var(--line-d);pointer-events:none;user-select:none;z-index:0}
+  .hero-inner{position:relative;z-index:1}
+  .hero h1{font-size:clamp(2.6rem,8vw,6.4rem);max-width:14em}
+  .hero h1 .line{display:block}
+  .hero h1 .accent-word{color:var(--accent)}
+  .hero-sub{max-width:36em;margin-top:1.8rem}
+  .hero-sub p{color:var(--text-d-soft);font-size:1.1rem}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:16px;margin-top:2.2rem}
+
+  /* TRIPTYCH */
+  .triptych-row{display:grid;gap:20px;padding:38px 0;border-top:1px solid var(--line-l);align-items:start}
+  .triptych-row:last-child{border-bottom:1px solid var(--line-l)}
+  @media (min-width:820px){.triptych-row{grid-template-columns:110px 1fr 1.1fr;gap:36px;align-items:center}}
+  .triptych-row .num{font-size:1.1rem;color:var(--accent)}
+  .triptych-row h3{font-size:clamp(2.1rem,4.6vw,3.6rem)}
+  .triptych-row .tcopy{max-width:34em}
+  .triptych-row .tcopy p{color:var(--text-l-soft)}
+  .triptych-row .tcopy a{display:inline-block;margin-top:0.4rem;font-family:var(--font-sans);font-size:0.9rem;text-decoration:underline;text-underline-offset:3px;color:var(--text-l)}
+  @media (min-width:820px){.triptych-row:nth-child(2){grid-template-columns:110px 1.1fr 1fr}.triptych-row:nth-child(2) h3{order:2}.triptych-row:nth-child(2) .tcopy{order:1}}
+
+  /* EXPERIENCE */
+  .exp-grid{display:grid;gap:30px;align-items:end}
+  @media (min-width:900px){.exp-grid{grid-template-columns:1.1fr 1fr}}
+  .exp-num{font-size:clamp(6rem,20vw,13rem);line-height:0.85;color:var(--accent)}
+  .exp-num sup{font-size:0.32em;top:-2.2em;color:var(--text-d-soft);font-family:var(--font-sans);font-weight:500}
+  .exp-quote{font-size:clamp(1.4rem,2.6vw,2.1rem);line-height:1.35;max-width:20em}
+  .exp-note{margin-top:1.6rem;max-width:30em;color:var(--text-d-soft)}
+
+  /* SERVICES SPREAD (reused home teaser + full services page) */
+  .spread{padding:64px 0}
+  @media (min-width:900px){.spread{padding:110px 0}}
+  .spread + .spread{border-top:1px solid var(--line)}
+  .spread-grid{display:grid;gap:36px;align-items:center}
+  @media (min-width:900px){.spread-grid{grid-template-columns:1fr 1fr;gap:60px}}
+  .spread.rev .spread-grid > .spread-art{order:2}
+  @media (min-width:900px){.spread.rev .spread-grid{grid-template-columns:1fr 1fr}}
+  .spread-art{aspect-ratio:5/4;border:1px solid var(--line)}
+  .spread-art svg{width:100%;height:100%;display:block}
+  .spread-body .num{color:var(--accent);display:block;margin-bottom:0.6rem}
+  .spread-body h2,.spread-body h3{font-size:clamp(2rem,4.4vw,3.2rem);margin-bottom:0.7rem}
+  .spread-body .promise{font-family:var(--font-serif);font-style:italic;font-size:1.25rem;margin-bottom:1.3rem;color:var(--accent)}
+  .spread-fields{display:grid;gap:16px;margin:1.4rem 0 1.6rem}
+  .spread-fields h4{font-family:var(--font-sans);font-weight:600;font-size:0.85rem;margin:0 0 0.3rem;color:var(--muted)}
+  .spread-fields p{margin:0;max-width:32em}
+
+  /* WORK */
+  .work-spread{padding:48px 0;border-top:1px solid var(--line)}
+  .work-spread:first-of-type{border-top:none}
+  .work-grid-2{display:grid;gap:32px}
+  @media (min-width:860px){.work-grid-2{grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}}
+  .work-art{aspect-ratio:4/3;position:relative;overflow:hidden;border:1px solid var(--line)}
+  .work-art .plate{position:absolute;inset:0}
+  .work-tag{display:inline-block;font-family:var(--font-sans);font-size:0.78rem;border:1px solid currentColor;padding:4px 12px;border-radius:99px;margin-bottom:1rem;color:var(--accent);border-color:var(--accent)}
+  .work-meta{display:flex;gap:18px;flex-wrap:wrap;margin:0.9rem 0 1rem}
+  .work-meta .label{color:var(--muted)}
+  .work-meta strong{font-family:var(--font-sans);font-weight:600}
+  .note-banner{border:1px solid var(--accent);background:transparent;padding:16px 22px;margin-bottom:2.4rem;font-size:0.92rem;color:var(--text-l-soft)}
+
+  /* ABOUT */
+  .about-hero h1{font-size:clamp(2.4rem,6vw,4.6rem);max-width:14em}
+  .about-body{display:grid;gap:40px;margin-top:2.5rem}
+  @media (min-width:900px){.about-body{grid-template-columns:220px 1fr;gap:60px}}
+  .about-body p{color:var(--text-l-soft);max-width:38em}
+  .pull{font-family:var(--font-serif);font-style:italic;font-size:clamp(1.5rem,3vw,2.3rem);color:var(--accent);margin:2rem 0;line-height:1.3;max-width:16em}
+
+  /* CONTACT */
+  .contact-grid{display:grid;gap:48px}
+  @media (min-width:900px){.contact-grid{grid-template-columns:1fr 1.1fr}}
+  .field{margin-bottom:20px}
+  .field label{display:block;font-family:var(--font-sans);font-size:0.88rem;margin-bottom:6px;color:var(--text-l-soft)}
+  .field .opt{font-weight:400}
+  input[type="text"],input[type="email"],input[type="tel"],select,textarea{width:100%;padding:13px 14px;font-family:var(--font-sans);font-size:1rem;background:var(--paper-2);border:1px solid var(--line-l);border-radius:var(--radius);color:var(--text-l)}
+  input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+  textarea{resize:vertical;min-height:120px}
+  .row-2{display:grid;gap:16px}
+  @media (min-width:520px){.row-2{grid-template-columns:1fr 1fr}}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-size:0.86rem;color:var(--text-l-soft);margin:20px 0}
+  .consent input{margin-top:4px}
+  .consent a{color:var(--text-l)}
+  .form-msg{margin-top:14px;font-size:0.9rem}
+  .form-msg.err{color:var(--accent-deep)}
+  .form-msg.ok{color:#3D6B4A}
+  button.submit{background:var(--ink);color:var(--paper);border:1px solid var(--ink);padding:14px 26px;font-family:var(--font-sans);font-size:1rem;font-weight:500;border-radius:var(--radius);cursor:pointer;transition:transform .2s ease,box-shadow .2s ease}
+  button.submit:hover,button.submit:focus-visible{transform:translateY(-2px);box-shadow:0 10px 24px -12px rgba(20,18,16,0.4)}
+  .contact-info .row{padding:16px 0;border-top:1px solid var(--line-l)}
+  .contact-info .row:last-child{border-bottom:1px solid var(--line-l)}
+  .contact-info dt{font-size:0.82rem;color:var(--text-l-soft);margin-bottom:2px}
+  .contact-info dd{margin:0;font-family:var(--font-sans)}
+
+  /* LEGAL */
+  .legal-body{max-width:58em}
+  .legal-body h2{font-family:var(--font-sans);font-style:normal;font-weight:600;font-size:1.2rem;margin-top:2.2rem}
+  .legal-body p,.legal-body li{color:var(--text-l-soft)}
+  .disclaimer{border-left:3px solid var(--accent);padding:14px 20px;margin-bottom:2rem;font-size:0.92rem;color:var(--text-l-soft)}
+
+  footer.site{border-top:1px solid var(--line-d);padding:56px 0 64px}
+  .footer-grid{display:grid;gap:30px}
+  @media (min-width:760px){.footer-grid{grid-template-columns:1.4fr 1fr 1fr}}
+  .footer-links{list-style:none;margin:0;padding:0}
+  .footer-links li{margin-bottom:9px}
+  .footer-links a{text-decoration:none;font-size:0.92rem;color:var(--text-d-soft)}
+  .footer-links a:hover{color:var(--text-d)}
+  .footer-bottom{margin-top:40px;padding-top:20px;border-top:1px solid var(--line-d);font-size:0.8rem;color:var(--text-d-soft);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+  [data-route]{display:none}
+  [data-route].active{display:block}
+
+  @media (prefers-reduced-motion:no-preference){
+    .fade-in{animation:fadeIn .6s ease both}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+    html.motion-ok .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+    html.motion-ok .reveal.in-view{opacity:1;transform:none}
+  }
+  html.motion-ok .work-art .plate{transition:transform .5s ease}
+  html.motion-ok .work-spread:hover .work-art .plate{transform:scale(1.04)}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <a class="wordmark" href="#/" data-link>Lilia Marouf</a>
+    <nav class="primary" aria-label="Navigation principale">
+      <a href="#/" data-link data-route-link="home">Accueil</a>
+      <a href="#/services" data-link data-route-link="services">Services</a>
+      <a href="#/realisations" data-link data-route-link="work">Réalisations</a>
+      <a href="#/a-propos" data-link data-route-link="about">À propos</a>
+      <a href="#/contact" data-link data-route-link="contact">Contact</a>
+      <a class="cta" href="#/contact" data-link>Parlons de votre projet</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+  </div>
+  <div class="wrap">
+    <nav id="mobile-menu" aria-label="Navigation mobile">
+      <a href="#/" data-link>Accueil</a>
+      <a href="#/services" data-link>Services</a>
+      <a href="#/realisations" data-link>Réalisations</a>
+      <a href="#/a-propos" data-link>À propos</a>
+      <a href="#/contact" data-link>Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HOME -->
+<section data-route="home" class="band hero" aria-labelledby="home-h1">
+  <span class="hero-ghost" aria-hidden="true">10</span>
+  <div class="wrap hero-inner">
+    <p class="label">Consulting, sites, social media — une seule expertise</p>
+    <h1 id="home-h1">
+      <span class="line">Je pense.</span>
+      <span class="line">Je construis.</span>
+      <span class="line accent-word">Je fais vivre.</span>
+    </h1>
+    <div class="hero-sub">
+      <p>Stratégie digitale, création de site et social media, pensés comme les trois dimensions d'une même expertise — pas comme trois prestations séparées. Plus de 10 ans d'expérience au service des indépendants, TPE et PME.</p>
+    </div>
+    <div class="hero-ctas">
+      <a class="cta" href="#/contact" data-link>Parlons de votre projet</a>
+      <a class="cta ghost" href="#/services" data-link>Voir comment je travaille</a>
+    </div>
+  </div>
+</section>
+
+<section data-route="home" class="band band-light" aria-labelledby="triptych-h2">
+  <div class="wrap">
+    <p class="label">Une expertise, trois formes</p>
+    <h2 id="triptych-h2" class="h-roman" style="font-size:clamp(1.6rem,3vw,2.1rem);margin-top:0.5rem;font-style:italic">La même logique, appliquée à trois moments de votre présence digitale.</h2>
+
+    <div class="triptych-row reveal">
+      <span class="num">01</span>
+      <h3>Penser</h3>
+      <div class="tcopy">
+        <p>Avant de produire quoi que ce soit, je clarifie ce qui doit l'être&nbsp;: vos objectifs, votre positionnement, vos priorités réelles. C'est le rôle du consulting.</p>
+        <a href="#/services" data-link>Le consulting en détail</a>
+      </div>
+    </div>
+
+    <div class="triptych-row reveal">
+      <span class="num">02</span>
+      <h3>Construire</h3>
+      <div class="tcopy">
+        <p>Un site n'a de valeur que s'il traduit une stratégie. Je conçois des sites pensés pour convertir un visiteur en prospect, pas seulement pour être beaux.</p>
+        <a href="#/services" data-link>La création de site en détail</a>
+      </div>
+    </div>
+
+    <div class="triptych-row reveal">
+      <span class="num">03</span>
+      <h3>Faire vivre</h3>
+      <div class="tcopy">
+        <p>Une stratégie ne s'arrête pas à la mise en ligne. J'anime une présence sociale cohérente, qui continue de porter votre message dans la durée.</p>
+        <a href="#/services" data-link>Le social media en détail</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-route="home" class="band" aria-labelledby="exp-h2">
+  <div class="wrap exp-grid">
+    <div class="reveal">
+      <p class="label">Expérience</p>
+      <p class="exp-num num">10<sup>+ ans</sup></p>
+    </div>
+    <div class="reveal">
+      <h2 id="exp-h2" class="exp-quote cite">Le digital évolue vite. Ce qui ne change pas, c'est la nécessité d'une stratégie claire et d'une exécution soignée.</h2>
+      <p class="exp-note">Dix ans passés à l'intersection de la stratégie, du design et du contenu m'ont appris à distinguer ce qui compte vraiment de ce qui fait juste illusion.</p>
+    </div>
+  </div>
+</section>
+
+<section data-route="home" class="band band-light" aria-labelledby="work-preview-h2">
+  <div class="wrap">
+    <p class="label">Réalisations</p>
+    <h2 id="work-preview-h2" style="margin-top:0.4rem">Des projets pensés comme des objets éditoriaux.</h2>
+    <p class="lede" style="margin-top:1rem">Cette section sera complétée au fil des projets menés. Voici le format qu'elle suivra.</p>
+
+    <div class="work-spread reveal" style="border-top:1px solid var(--line-l);margin-top:2.4rem">
+      <div class="work-grid-2">
+        <div class="work-art">
+          <svg class="plate" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="var(--paper-2)"/><line x1="0" y1="0" x2="400" y2="300" stroke="var(--accent)" stroke-width="1"/><line x1="400" y1="0" x2="0" y2="300" stroke="var(--line-l)" stroke-width="1"/><circle cx="200" cy="150" r="60" fill="none" stroke="var(--accent)" stroke-width="1.5"/></svg>
+        </div>
+        <div>
+          <span class="work-tag">Exemple de format</span>
+          <h3>[Nom du projet]</h3>
+          <div class="work-meta"><span class="label">[Secteur]</span><span class="label">[Prestation réalisée]</span></div>
+          <p class="lede">[Description courte du projet à venir — contexte, approche et résultat, une fois un vrai projet documenté.]</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-spread reveal">
+      <div class="work-grid-2">
+        <div class="work-art">
+          <svg class="plate" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="var(--ink)"/><rect x="40" y="60" width="140" height="20" fill="var(--accent)"/><rect x="40" y="100" width="90" height="20" fill="var(--paper-2)" opacity="0.5"/><rect x="40" y="140" width="200" height="1" fill="var(--paper-2)" opacity="0.4"/><rect x="40" y="170" width="140" height="1" fill="var(--paper-2)" opacity="0.4"/></svg>
+        </div>
+        <div>
+          <span class="work-tag">Exemple de format</span>
+          <h3>[Nom du projet]</h3>
+          <div class="work-meta"><span class="label">[Secteur]</span><span class="label">[Prestation réalisée]</span></div>
+          <p class="lede">[Description courte du projet à venir — contexte, approche et résultat, une fois un vrai projet documenté.]</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:1rem">
+      <a class="cta ghost" href="#/realisations" data-link style="border-color:var(--text-l);color:var(--text-l)">Voir toutes les réalisations</a>
+    </div>
+  </div>
+</section>
+
+<section data-route="home" class="band band-accent" aria-labelledby="final-cta-h2" style="padding:96px 0">
+  <div class="wrap">
+    <h2 id="final-cta-h2" style="font-size:clamp(2rem,5vw,3.6rem);max-width:16em">Un premier échange suffit pour savoir si je peux vous aider.</h2>
+    <div style="margin-top:2rem">
+      <a class="cta ghost" href="#/contact" data-link style="border-color:var(--on-accent)">Parlons de votre projet</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section data-route="services" class="band" aria-labelledby="services-h1" style="padding-bottom:0">
+  <div class="wrap" style="padding-top:60px;padding-bottom:70px">
+    <p class="label">Services</p>
+    <h1 id="services-h1" style="font-size:clamp(2.4rem,7vw,5rem);margin-top:0.5rem">Trois services, une même logique.</h1>
+    <p class="hero-sub" style="margin-top:1.4rem"><span style="color:var(--text-d-soft)">Chacun peut être mené seul. Ensemble, ils forment une présence digitale cohérente, du diagnostic jusqu'à l'animation dans la durée.</span></p>
+  </div>
+
+  <div class="spread band" id="consulting">
+    <div class="wrap spread-grid">
+      <div class="spread-art">
+        <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice"><rect width="400" height="320" fill="var(--ink-2)"/><circle cx="150" cy="160" r="90" fill="none" stroke="var(--accent)" stroke-width="1"/><circle cx="150" cy="160" r="55" fill="none" stroke="var(--line-d)" stroke-width="1"/><line x1="150" y1="160" x2="320" y2="70" stroke="var(--accent)" stroke-width="1.5"/><circle cx="320" cy="70" r="4" fill="var(--accent)"/></svg>
+      </div>
+      <div class="spread-body">
+        <span class="num">01</span>
+        <h2>Consulting en marketing digital</h2>
+        <p class="promise">Une direction claire plutôt qu'une liste d'actions dispersées.</p>
+        <div class="spread-fields">
+          <div><h4>Le problème que je résous</h4><p>Beaucoup d'indépendants et de PME multiplient les actions marketing sans direction commune, sans savoir ce qui fonctionne réellement.</p></div>
+          <div><h4>Ce que je fais concrètement</h4><p>Diagnostic de l'existant, positionnement, plan d'action priorisé et réaliste au regard de vos moyens.</p></div>
+          <div><h4>Ce que ça change pour vous</h4><p>Des décisions basées sur vos objectifs, une meilleure lisibilité de ce qui marche, et un cap qui tient dans la durée.</p></div>
+        </div>
+        <a class="cta ghost" href="#/contact" data-link>Parlons de votre stratégie</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="spread band band-light rev" id="creation-sites">
+    <div class="wrap spread-grid">
+      <div class="spread-body">
+        <span class="num">02</span>
+        <h2>Création de sites internet</h2>
+        <p class="promise">Un site qui travaille pour vous, pas seulement qui vous représente.</p>
+        <div class="spread-fields">
+          <div><h4>Le problème que je résous</h4><p>Un site vieillissant ou générique qui ne reflète ni votre activité actuelle ni la confiance que vous inspirez en rendez-vous.</p></div>
+          <div><h4>Ce que je fais concrètement</h4><p>Cadrage de l'arborescence, direction artistique sur mesure, rédaction des contenus, mise en ligne et bases SEO.</p></div>
+          <div><h4>Ce que ça change pour vous</h4><p>Un site rapide, lisible sur tous les écrans, pensé pour convertir un visiteur en prise de contact.</p></div>
+        </div>
+        <a class="cta" href="#/contact" data-link>Parlons de votre site</a>
+      </div>
+      <div class="spread-art">
+        <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice"><rect width="400" height="320" fill="var(--paper-2)"/><rect x="40" y="40" width="320" height="240" fill="none" stroke="var(--text-l)" stroke-width="1"/><rect x="40" y="40" width="320" height="34" fill="var(--ink)"/><rect x="60" y="55" width="8" height="8" fill="var(--accent)"/><rect x="76" y="55" width="8" height="8" fill="var(--paper-2)" opacity="0.6"/><rect x="72" y="100" width="200" height="16" fill="var(--accent)" opacity="0.85"/><rect x="72" y="130" width="260" height="1" fill="var(--text-l)" opacity="0.35"/><rect x="72" y="150" width="180" height="1" fill="var(--text-l)" opacity="0.35"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="spread band" id="social-media">
+    <div class="wrap spread-grid">
+      <div class="spread-art">
+        <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice"><rect width="400" height="320" fill="var(--ink-2)"/><line x1="90" y1="230" x2="230" y2="70" stroke="var(--line-d)" stroke-width="1"/><line x1="90" y1="230" x2="320" y2="150" stroke="var(--line-d)" stroke-width="1"/><line x1="90" y1="230" x2="150" y2="90" stroke="var(--accent)" stroke-width="1.5"/><circle cx="90" cy="230" r="6" fill="var(--accent)"/><circle cx="230" cy="70" r="4" fill="var(--text-d-soft)"/><circle cx="320" cy="150" r="4" fill="var(--text-d-soft)"/><circle cx="150" cy="90" r="4" fill="var(--accent)"/></svg>
+      </div>
+      <div class="spread-body">
+        <span class="num">03</span>
+        <h2>Social media</h2>
+        <p class="promise">Une présence sociale qui vous ressemble, pas une case à cocher.</p>
+        <div class="spread-fields">
+          <div><h4>Le problème que je résous</h4><p>Des réseaux sociaux animés au coup par coup, sans ligne éditoriale, ou laissés à l'abandon faute de temps.</p></div>
+          <div><h4>Ce que je fais concrètement</h4><p>Définition de la ligne éditoriale, création de contenu, calendrier de publication réaliste, animation continue.</p></div>
+          <div><h4>Ce que ça change pour vous</h4><p>Un rythme tenable, des contenus cohérents avec votre image, et une présence qui parle à votre audience réelle.</p></div>
+        </div>
+        <a class="cta ghost" href="#/contact" data-link>Parlons de votre présence sociale</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="band band-light" style="padding:56px 0">
+    <div class="wrap"><a class="cta" href="#/contact" data-link>Parlons de votre projet</a></div>
+  </div>
+</section>
+
+<!-- REALISATIONS -->
+<section data-route="work" class="band" aria-labelledby="work-h1" style="padding-bottom:0">
+  <div class="wrap" style="padding-top:60px;padding-bottom:0">
+    <p class="label">Réalisations</p>
+    <h1 id="work-h1" style="font-size:clamp(2.4rem,7vw,5rem);margin-top:0.5rem">Études de cas</h1>
+  </div>
+
+  <div class="wrap band-light band" style="padding:40px 0 10px;margin-top:56px">
+    <div class="note-banner">Les réalisations seront ajoutées ici au fil des projets menés. Les cartes suivantes illustrent le format qu'elles suivront — aucune ne correspond à un client réel pour le moment.</div>
+  </div>
+
+  <div class="band-light band">
+    <div class="wrap">
+      <div class="work-spread reveal" style="border-top:none">
+        <div class="work-grid-2">
+          <div class="work-art"><svg class="plate" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="var(--paper-2)"/><circle cx="140" cy="150" r="80" fill="none" stroke="var(--accent)" stroke-width="1"/><line x1="0" y1="0" x2="400" y2="300" stroke="var(--line-l)" stroke-width="1"/></svg></div>
+          <div>
+            <span class="work-tag">Exemple de format</span>
+            <h3>[Nom du projet]</h3>
+            <div class="work-meta"><span class="label">Client&nbsp;: [type de structure]</span></div>
+            <div class="spread-fields" style="margin-top:1rem">
+              <div><h4>Contexte</h4><p>[Situation de départ à décrire]</p></div>
+              <div><h4>Problématique</h4><p>[Difficulté rencontrée par le client]</p></div>
+              <div><h4>Solution</h4><p>[Approche et actions mises en place]</p></div>
+              <div><h4>Résultats</h4><p>[Résultats mesurés à l'issue du projet]</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-spread reveal">
+        <div class="work-grid-2">
+          <div class="work-art"><svg class="plate" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="var(--ink)"/><rect x="50" y="70" width="160" height="18" fill="var(--accent)"/><rect x="50" y="110" width="260" height="1" fill="var(--paper-2)" opacity="0.4"/><rect x="50" y="140" width="200" height="1" fill="var(--paper-2)" opacity="0.4"/></svg></div>
+          <div>
+            <span class="work-tag">Exemple de format</span>
+            <h3>[Nom du projet]</h3>
+            <div class="work-meta"><span class="label">Client&nbsp;: [type de structure]</span></div>
+            <div class="spread-fields" style="margin-top:1rem">
+              <div><h4>Contexte</h4><p>[Situation de départ à décrire]</p></div>
+              <div><h4>Problématique</h4><p>[Difficulté rencontrée par le client]</p></div>
+              <div><h4>Solution</h4><p>[Approche et actions mises en place]</p></div>
+              <div><h4>Résultats</h4><p>[Résultats mesurés à l'issue du projet]</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work-spread reveal">
+        <div class="work-grid-2">
+          <div class="work-art"><svg class="plate" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice"><rect width="400" height="300" fill="var(--paper-2)"/><line x1="80" y1="240" x2="200" y2="90" stroke="var(--accent)" stroke-width="1.5"/><line x1="200" y1="90" x2="320" y2="180" stroke="var(--line-l)" stroke-width="1"/><circle cx="200" cy="90" r="5" fill="var(--accent)"/></svg></div>
+          <div>
+            <span class="work-tag">Exemple de format</span>
+            <h3>[Nom du projet]</h3>
+            <div class="work-meta"><span class="label">Client&nbsp;: [type de structure]</span></div>
+            <div class="spread-fields" style="margin-top:1rem">
+              <div><h4>Contexte</h4><p>[Situation de départ à décrire]</p></div>
+              <div><h4>Problématique</h4><p>[Difficulté rencontrée par le client]</p></div>
+              <div><h4>Solution</h4><p>[Approche et actions mises en place]</p></div>
+              <div><h4>Résultats</h4><p>[Résultats mesurés à l'issue du projet]</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding:40px 0 90px"><a class="cta" href="#/contact" data-link>Discuter d'un projet similaire</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section data-route="about" class="band band-light about-hero" aria-labelledby="about-h1">
+  <div class="wrap" style="padding-top:56px;padding-bottom:80px">
+    <p class="label">À propos</p>
+    <h1 id="about-h1">Dix ans à l'intersection de la stratégie, du design et du contenu.</h1>
+    <div class="about-body">
+      <div>
+        <p class="label">Lilia Marouf</p>
+        <p class="lede">Consultante indépendante en marketing digital</p>
+      </div>
+      <div>
+        <p>Je travaille depuis plus de dix ans sur des problématiques de marketing digital, de création de sites et de stratégie social media. Cette double casquette — stratégique et opérationnelle — me permet d'accompagner une entreprise de façon globale, plutôt que de traiter chaque sujet isolément.</p>
+        <p class="pull">Le digital n'a pas besoin d'être compliqué pour être efficace.</p>
+        <p>Il doit surtout être clair, adapté à la réalité de votre structure, et mesurable dans le temps. C'est cette conviction qui guide chaque recommandation que je fais&nbsp;: pas de modèle appliqué tel quel, mais une approche construite à partir de votre activité, de votre secteur et de vos moyens réels.</p>
+        <p>Je travaille en interlocuteur unique. Ce qui m'anime&nbsp;: rendre le digital accessible aux dirigeants de petites structures, sans jargon inutile et sans promesses disproportionnées — et savoir passer, sans rupture, de la stratégie à l'exécution.</p>
+        <div style="margin-top:1.8rem"><a class="cta" href="#/contact" data-link style="background:var(--text-l);border-color:var(--text-l);color:var(--paper)">Échanger avec moi</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section data-route="contact" class="band band-light" aria-labelledby="contact-h1">
+  <div class="wrap" style="padding-top:56px;padding-bottom:90px">
+    <p class="label">Contact</p>
+    <h1 id="contact-h1" style="font-size:clamp(2.2rem,6vw,4rem);margin-top:0.4rem">Parlons de votre projet.</h1>
+    <p class="lede" style="margin-top:1.2rem;max-width:34em">Décrivez votre besoin en quelques lignes&nbsp;: je reviens vers vous rapidement pour convenir d'un premier échange.</p>
+    <div class="contact-grid" style="margin-top:2.6rem">
+      <div>
+        <form id="contact-form" novalidate>
+          <div class="row-2">
+            <div class="field"><label for="f-prenom">Prénom</label><input type="text" id="f-prenom" name="prenom" autocomplete="given-name" required></div>
+            <div class="field"><label for="f-nom">Nom</label><input type="text" id="f-nom" name="nom" autocomplete="family-name" required></div>
+          </div>
+          <div class="field"><label for="f-entreprise">Entreprise <span class="opt">(facultatif)</span></label><input type="text" id="f-entreprise" name="entreprise" autocomplete="organization"></div>
+          <div class="row-2">
+            <div class="field"><label for="f-email">E-mail</label><input type="email" id="f-email" name="email" autocomplete="email" required></div>
+            <div class="field"><label for="f-tel">Téléphone <span class="opt">(facultatif)</span></label><input type="tel" id="f-tel" name="telephone" autocomplete="tel"></div>
+          </div>
+          <div class="field">
+            <label for="f-besoin">Type de besoin</label>
+            <select id="f-besoin" name="besoin" required>
+              <option value="">Sélectionnez une option</option>
+              <option value="Consulting marketing digital">Consulting en marketing digital</option>
+              <option value="Création de site internet">Création de site internet</option>
+              <option value="Social media">Social media</option>
+              <option value="Accompagnement global">Accompagnement global</option>
+              <option value="Autre">Autre</option>
+            </select>
+          </div>
+          <div class="field"><label for="f-message">Votre message</label><textarea id="f-message" name="message" required></textarea></div>
+          <label class="consent">
+            <input type="checkbox" id="f-consent" name="consent" required>
+            <span>J'accepte que les informations transmises via ce formulaire soient utilisées pour répondre à ma demande, conformément à la <a href="#/confidentialite" data-link>politique de confidentialité</a>.</span>
+          </label>
+          <button class="submit" type="submit">Envoyer ma demande</button>
+          <p id="form-msg" class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div>
+        <div class="contact-info">
+          <dl>
+            <div class="row"><dt>E-mail</dt><dd>[email à renseigner]</dd></div>
+            <div class="row"><dt>Téléphone</dt><dd>[téléphone à renseigner]</dd></div>
+            <div class="row"><dt>Zone d'intervention</dt><dd>[ville / région à renseigner]</dd></div>
+            <div class="row"><dt>Délai de réponse</dt><dd>Sous 2 jours ouvrés</dd></div>
+          </dl>
+        </div>
+        <p class="lede" style="margin-top:1.2rem;font-size:0.88rem">Coordonnées provisoires — à personnaliser avant la mise en ligne du site.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEGAL -->
+<section data-route="legal" class="band band-light" aria-labelledby="legal-h1">
+  <div class="wrap legal-body" style="padding-top:56px;padding-bottom:80px">
+    <p class="label">Informations légales</p>
+    <h1 id="legal-h1" style="font-size:clamp(2rem,5vw,3.2rem)">Mentions légales</h1>
+    <div class="disclaimer">Ce contenu est une base à personnaliser. Il ne constitue pas une validation juridique&nbsp;: faites-le vérifier par un professionnel du droit avant mise en ligne.</div>
+    <h2>Éditeur du site</h2>
+    <p>Le présent site est édité par Lilia Marouf, [statut juridique à préciser — ex. entreprise individuelle / micro-entreprise], immatriculée sous le numéro SIRET [à compléter].<br>Siège / adresse professionnelle&nbsp;: [adresse à compléter].<br>Contact&nbsp;: [e-mail à compléter].</p>
+    <h2>Directrice de la publication</h2>
+    <p>Lilia Marouf.</p>
+    <h2>Hébergement</h2>
+    <p>Ce site est hébergé par [nom de l'hébergeur à compléter], [adresse de l'hébergeur à compléter].</p>
+    <h2>Propriété intellectuelle</h2>
+    <p>L'ensemble des contenus présents sur ce site (textes, visuels, structure) est la propriété de Lilia Marouf, sauf mention contraire, et ne peut être reproduit sans autorisation préalable.</p>
+  </div>
+</section>
+
+<section data-route="privacy" class="band band-light" aria-labelledby="privacy-h1">
+  <div class="wrap legal-body" style="padding-top:56px;padding-bottom:80px">
+    <p class="label">Informations légales</p>
+    <h1 id="privacy-h1" style="font-size:clamp(2rem,5vw,3.2rem)">Politique de confidentialité</h1>
+    <div class="disclaimer">Ce contenu est une base à personnaliser selon les outils réellement utilisés. Il ne constitue pas une validation juridique.</div>
+    <h2>Responsable du traitement</h2>
+    <p>Lilia Marouf est responsable du traitement des données collectées sur ce site. Contact&nbsp;: [e-mail à compléter].</p>
+    <h2>Données collectées</h2>
+    <p>Le formulaire de contact collecte les données suivantes&nbsp;: prénom, nom, e-mail, entreprise et téléphone si renseignés, type de besoin, et contenu du message.</p>
+    <h2>Finalité</h2>
+    <p>Ces données sont utilisées uniquement pour répondre à votre demande de contact et ne sont ni cédées ni utilisées à des fins commerciales tierces.</p>
+    <h2>Durée de conservation</h2>
+    <p>[Durée à préciser — par exemple 3 ans à compter du dernier contact, en l'absence de relation commerciale].</p>
+    <h2>Vos droits</h2>
+    <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition concernant vos données personnelles. Pour l'exercer, contactez [e-mail à compléter].</p>
+    <h2>Hébergement des données</h2>
+    <p>Les données transmises via le formulaire sont hébergées par [nom de l'hébergeur ou du service de formulaire à compléter].</p>
+  </div>
+</section>
+
+<section data-route="cookies" class="band band-light" aria-labelledby="cookies-h1">
+  <div class="wrap legal-body" style="padding-top:56px;padding-bottom:80px">
+    <p class="label">Informations légales</p>
+    <h1 id="cookies-h1" style="font-size:clamp(2rem,5vw,3.2rem)">Gestion des cookies</h1>
+    <div class="disclaimer">Ce contenu est une base à personnaliser si des outils de mesure d'audience ou de suivi sont ajoutés au site. Il ne constitue pas une validation juridique.</div>
+    <h2>Cookies utilisés actuellement</h2>
+    <p>Dans sa version actuelle, ce site n'utilise aucun cookie de mesure d'audience ni cookie publicitaire. Aucun outil de suivi tiers n'est intégré.</p>
+    <h2>Si des outils tiers sont ajoutés</h2>
+    <p>Si un outil de statistiques, un pixel publicitaire ou tout autre service tiers venait à être intégré, un bandeau de consentement conforme au RGPD devra être mis en place avant tout dépôt de cookie non essentiel, et cette page devra être complétée en conséquence.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site band">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="wordmark" style="display:block;margin-bottom:0.6rem">Lilia Marouf</p>
+      <p class="lede" style="max-width:28em;font-size:0.9rem">Consulting en marketing digital, création de sites internet et social media, pour indépendants, TPE et PME.</p>
+    </div>
+    <div>
+      <p class="label" style="margin-bottom:0.9rem;color:var(--text-d)">Navigation</p>
+      <ul class="footer-links">
+        <li><a href="#/services" data-link>Services</a></li>
+        <li><a href="#/realisations" data-link>Réalisations</a></li>
+        <li><a href="#/a-propos" data-link>À propos</a></li>
+        <li><a href="#/contact" data-link>Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="label" style="margin-bottom:0.9rem;color:var(--text-d)">Informations légales</p>
+      <ul class="footer-links">
+        <li><a href="#/mentions-legales" data-link>Mentions légales</a></li>
+        <li><a href="#/confidentialite" data-link>Politique de confidentialité</a></li>
+        <li><a href="#/cookies" data-link>Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="year"></span> Lilia Marouf. Tous droits réservés.</span>
+    <span>Site conçu comme un outil de prise de contact.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('year').textContent = new Date().getFullYear();
+  var motionOk = window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
+  if(motionOk){ document.documentElement.classList.add('motion-ok'); }
+
+  var revealNodes = document.querySelectorAll('.reveal');
+  if(motionOk && 'IntersectionObserver' in window){
+    revealNodes.forEach(function(node,i){ node.style.transitionDelay = Math.min((i%4)*70,210)+'ms'; });
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){ entry.target.classList.add('in-view'); io.unobserve(entry.target); }
+      });
+    }, {threshold:0.15, rootMargin:'0px 0px -40px 0px'});
+    revealNodes.forEach(function(node){ io.observe(node); });
+  }
+
+  var routes = {
+    '#/': {id:'home', title:'Lilia Marouf — Je pense, je construis, je fais vivre votre présence digitale', desc:'Consulting marketing digital, création de sites internet et social media pour indépendants, TPE et PME.'},
+    '#/services': {id:'services', title:'Services — Lilia Marouf', desc:'Consulting en marketing digital, création de sites internet et social media : trois services, une même logique.'},
+    '#/realisations': {id:'work', title:'Réalisations — Lilia Marouf', desc:'Études de cas et projets menés en consulting marketing digital, création de site et social media.'},
+    '#/a-propos': {id:'about', title:'À propos — Lilia Marouf', desc:'Plus de 10 ans d’expérience en marketing digital, au service des indépendants, TPE et PME.'},
+    '#/contact': {id:'contact', title:'Contact — Lilia Marouf', desc:'Contactez Lilia Marouf pour échanger sur votre projet de stratégie digitale, site internet ou réseaux sociaux.'},
+    '#/mentions-legales': {id:'legal', title:'Mentions légales — Lilia Marouf', desc:'Mentions légales du site de Lilia Marouf.'},
+    '#/confidentialite': {id:'privacy', title:'Politique de confidentialité — Lilia Marouf', desc:'Politique de confidentialité du site de Lilia Marouf.'},
+    '#/cookies': {id:'cookies', title:'Cookies — Lilia Marouf', desc:'Gestion des cookies sur le site de Lilia Marouf.'}
+  };
+  var sections = document.querySelectorAll('[data-route]');
+  var navLinks = document.querySelectorAll('nav.primary a[data-route-link]');
+  var metaDesc = document.querySelector('meta[name="description"]');
+
+  function render(){
+    var hash = window.location.hash || '#/';
+    var route = routes[hash] || routes['#/'];
+    sections.forEach(function(s){ s.classList.toggle('active', s.getAttribute('data-route') === route.id); });
+    document.title = route.title;
+    if(metaDesc) metaDesc.setAttribute('content', route.desc);
+    navLinks.forEach(function(a){
+      if(a.getAttribute('data-route-link') === route.id){ a.setAttribute('aria-current','page'); } else { a.removeAttribute('aria-current'); }
+    });
+    document.getElementById('mobile-menu').classList.remove('open');
+    document.getElementById('menu-toggle').setAttribute('aria-expanded','false');
+    window.scrollTo(0,0);
+    var active = document.querySelector('[data-route].active');
+    if(active){ active.classList.remove('fade-in'); void active.offsetWidth; active.classList.add('fade-in'); }
+  }
+  window.addEventListener('hashchange', render);
+  render();
+
+  var toggle = document.getElementById('menu-toggle');
+  var mobileMenu = document.getElementById('mobile-menu');
+  toggle.addEventListener('click', function(){
+    var open = mobileMenu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  var form = document.getElementById('contact-form');
+  var msg = document.getElementById('form-msg');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    msg.className = 'form-msg'; msg.textContent = '';
+    var required = form.querySelectorAll('[required]');
+    var missing = false;
+    required.forEach(function(el){ if(el.type === 'checkbox' ? !el.checked : !el.value.trim()){ missing = true; } });
+    if(missing){
+      msg.classList.add('err');
+      msg.textContent = 'Merci de compléter les champs obligatoires et d’accepter la politique de confidentialité avant l’envoi.';
+      return;
+    }
+    var data = Object.fromEntries(new FormData(form).entries());
+    var subject = encodeURIComponent('Demande de contact — ' + (data.besoin || 'site internet'));
+    var body = encodeURIComponent(
+      'Prénom : ' + data.prenom + '\n' + 'Nom : ' + data.nom + '\n' + 'Entreprise : ' + (data.entreprise || '—') + '\n' +
+      'E-mail : ' + data.email + '\n' + 'Téléphone : ' + (data.telephone || '—') + '\n' + 'Type de besoin : ' + data.besoin + '\n\n' +
+      'Message :\n' + data.message
+    );
+    msg.classList.add('ok');
+    msg.textContent = 'Votre messagerie va s’ouvrir avec votre demande pré-remplie. Il vous suffira de l’envoyer.';
+    window.location.href = 'mailto:contact@a-personnaliser.fr?subject=' + subject + '&body=' + body;
+  });
+})();
+</script>
+</body>
+</html>
